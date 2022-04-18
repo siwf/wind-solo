@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-12 16:29:22
  * @LastEditors: siwenfeng
- * @LastEditTime: 2021-11-01 15:58:24
+ * @LastEditTime: 2022-04-18 13:47:37
 -->
 <template>
 	<view class="content">
@@ -29,7 +29,8 @@
 		},
 		
 		onLoad(options){
-			var content = JSON.parse(unescape(options.content));
+			console.log(options.content)
+			var content = options.content;
 			content = content.replace(/<!DOCTYPE html>/g,"").replace(/<html>/g,"").replace(/<\/html>/g,"").replace(/<head>/g,"").replace(/<\/head>/g,"").replace(/<body>/g,"").replace(/<\/body>/g,"")
 			// var htmlString = content.replace(/\\/g, "").replace(/<img/g, "<img style=\"display:none;\"");
 			this.richText = htmlParser(content);
