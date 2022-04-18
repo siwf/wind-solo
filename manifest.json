@@ -1,0 +1,20 @@
+{
+    "name" : "温风点火影院",
+    "appid" : "__UNI__6035591",
+    "description" : "",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    "networkTimeout" : {
+        "request" : 60000
+    },
+    /* 快应用特有相关 */
+    "mp-weixin" : {
+        /* 小程序特有相关 */
+        "usingComponents" : true,
+        "appid" : "wxa4ad150903ddd6ce",
+        "setting" : {
+            "urlCheck" : true
+        }
+    }
+}

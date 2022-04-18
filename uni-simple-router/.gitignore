@@ -1,0 +1,7 @@
+/node_modules
+/examples/*/node_modules
+/examples/*/unpackage
+/examples/*/uni-simple-router.js.map
+/temp
+/dist/src
+package-lock.json

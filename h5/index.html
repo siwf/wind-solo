@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8"></meta>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"name="viewport"></meta>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .yupian-wrap {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        #cbox {
+            margin-top: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="yupian-wrap">
+        <div id="cbox">
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            // 初始化
+            // var baseUrl = window.location.origin;
+            function getQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]);
+                return null;
+            }
+            new YpRiddler({
+                expired: 30,
+                mode: 'flat',
+                winWidth: '95%',
+                lang: 'zh-cn', // 界面语言, 目前支持: 中文简体 zh-cn, 英语 en
+                container: document.getElementById('cbox'),
+                appId: 'df825fad64ab4f90a299f7f1fab4cc8d',
+                version: 'v1',
+                onError: function (param) {
+                    if (!param.code) {
+                        console.error('错误请求');
+                    }
+                    else if (parseInt(param.code / 100) == 5) {
+                        // 服务不可用时，开发者可采取替代方案，详见 “get 接口响应码释义”
+                        console.error('验证服务暂不可用');
+                    }
+                    else if (param.code == 429) {
+                        console.warn('请求过于频繁，请稍后再试');
+                    }
+                    else if (param.code == 403) {
+                        console.warn('请求受限，请稍后再试');
+                    }
+                    else if (param.code == 400) {
+                        console.warn('非法请求，请检查参数');
+                    }
+                    // 异常回调
+                    console.error('验证服务异常')
+                },
+                onSuccess: function (validInfo, close, useDefaultSuccess) {
+                    // 成功回调
+                    // alert('验证通过! token=' + validInfo.token + ', authenticate=' + validInfo.authenticate)
+                    // 验证成功默认样式
+                    useDefaultSuccess(true)
+                    close()
+                    const params = JSON.parse(decodeURIComponent(getQueryString('params')))
+                    params.jigsawAuthenticate = validInfo.authenticate;
+                    params.jigsawToken = validInfo.token;
+
+                    wx.miniProgram.getEnv(function (res) {
+                        if (res.miniprogram) {
+                            wx.miniProgram.redirectTo({
+                                url: '/pages/public/smscode?params=' + encodeURIComponent(JSON.stringify(params))
+                            })
+                        }
+                    })
+
+                },
+                onFail: function (code, msg, retry) {
+                    // 失败回调
+                    // alert('出错啦：' + msg + ' code: ' + code)
+                    retry()
+                },
+                beforeStart: function (next) {
+                    console.log('验证马上开始')
+                    next()
+                },
+                onExit: function () {
+                    // 退出验证 （仅限dialog模式有效）
+                    console.log('退出验证')
+                }
+            })
+        }
+    </script>
+    <script src="https://www.yunpian.com/static/official/js/libs/riddler-sdk-0.2.2.js?t=20210804">
+    </script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js" type="text/javascript">
+    </script>
+</body>
+
+</html>
