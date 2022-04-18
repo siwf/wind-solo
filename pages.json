@@ -20,7 +20,7 @@
 		{
 			"path": "pages/product/product",
 			"style": {
-				"navigationBarTitleText": "产品",
+				"navigationBarTitleText": "影视",
 				"enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#3C276F",
 				"navigationBarTextStyle": "white",
@@ -348,7 +348,7 @@
 				"pagePath": "pages/product/product",
 				"iconPath": "static/tab-product.png",
 				"selectedIconPath": "static/tab-product-current.png",
-				"text": "产品"
+				"text": "影视"
 			},
 			{
 				"pagePath": "pages/user/user",

@@ -1,1 +1,1 @@
-# fortune-uniapp财富小程序
+# wind-solo温风点火小程序

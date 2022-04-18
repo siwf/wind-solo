@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-13 17:15:35
  * @LastEditors: siwenfeng
- * @LastEditTime: 2021-11-24 17:08:43
+ * @LastEditTime: 2022-04-18 10:56:56
 -->
 <template>
   <view class="f-home-swiper u-flex-col u-m-b-24 u-p-b-58">
@@ -23,13 +23,13 @@ export default {
     return {
       list: [
         {
-          image: IMG_URL + "banner.png",
+          image: IMG_URL + "banner.jpg",
         },
         {
-          image: IMG_URL + "banner.png",
+          image: IMG_URL + "banner.jpg",
         },
         {
-          image: IMG_URL + "banner.png",
+          image: IMG_URL + "banner.jpg",
         },
       ],
     };

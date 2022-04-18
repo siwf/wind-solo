@@ -3,15 +3,15 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-13 16:07:56
  * @LastEditors: siwenfeng
- * @LastEditTime: 2021-11-24 15:08:13
+ * @LastEditTime: 2022-04-18 10:22:10
 -->
 <template>
   <view class="u-flex-col" style="margin-bottom: 110rpx; margin-top:48rpx;">
     <view class="u-text-center u-m-b-4 u-font-md f-footer-property"
-      >惠融资产</view
+      >温风点火</view
     >
     <view class="u-text-center u-font-xs f-footer-teward"
-      >您的资产配置管家</view
+      >温暖照亮您的灵魂</view
     >
   </view>
 </template>

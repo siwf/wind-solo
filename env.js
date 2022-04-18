@@ -3,15 +3,15 @@ const env = 'sit'// 测试
 // const env = 'prd' // 生产
 
 
-const base_url_qa = 'https://qa4wealth-wechat-api.hfax.com/' //后台根域名
-const img_url_qa = 'https://cdn.nwm-wechat.hfax.com/wechat/'//全局网络图片地址变量，css背景图片地址变量在uni.scss
+const base_url_qa = '' //后台根域名
+const img_url_qa = '/static/image/home/'//全局网络图片地址变量，css背景图片地址变量在uni.scss
 
-const base_url_pre = 'https://prewealth-wechat-api.hfax.com/'
-const img_url_pre = 'https://cdn.nwm-wechat.hfax.com/wechat/'
+const base_url_pre = ''
+const img_url_pre = '/static/image/home/'
 
 
-const base_url_prd = 'https://nwm-wechat.hfax.com/' //后台根域名
-const img_url_prd = 'https://cdn.nwm-wechat.hfax.com/wechat/'//全局网络图片地址变量，css背景图片地址变量在uni.scss
+const base_url_prd = '' //后台根域名
+const img_url_prd = '/static/image/home/'//全局网络图片地址变量，css背景图片地址变量在uni.scss
 
 
 let API_URL = ''
@@ -30,7 +30,7 @@ if (env === 'sit') {
     IMG_URL = img_url_pre
 }
 
-API_URL = `${BASE_URL}wealth-wechat-api/`
+API_URL = `${BASE_URL}siwenfeng-wechat-api/`
 
 export {
     API_URL,

@@ -3,29 +3,17 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-14 10:10:18
  * @LastEditors: siwenfeng
- * @LastEditTime: 2021-11-26 15:28:16
+ * @LastEditTime: 2022-04-18 11:09:45
 -->
 <template>
   <view class="f-home-list u-m-t-48">
-    <view class="f-list-title u-m-b-24">了解惠融资产</view>
+    <view class="f-list-title u-m-b-24">最近热映</view>
     <view class="f-list-wrap">
       <image
-        style="height: 160rpx; width: 686rpx"
-        v-if="$IMG_URL"
-        :src="$IMG_URL + 'gsjj.png'"
-        class="u-m-b-20"
-        @tap="$Router.push('/pages/home/companyIntro')"
-      />
-      <image
-        style="height: 160rpx; width: 686rpx"
-        v-if="$IMG_URL"
-        :src="$IMG_URL + 'hzhb.png'"
-        class="u-m-b-20"
-      />
-      <image
-        style="height: 160rpx; width: 686rpx"
-        v-if="$IMG_URL"
-        :src="$IMG_URL + 'fxcx.png'"
+        style="height: 288rpx; width: 686rpx"
+        v-for="(item, index) in imageList"
+        :key="index"
+        :src="item.image"
         class="u-m-b-20"
       />
     </view>
@@ -33,10 +21,26 @@
 </template>
 
 <script>
+import {
+	IMG_URL
+} from '@/env'
 export default {
   data() {
     return {
-      imageList: [],
+      imageList: [
+        {
+          image: IMG_URL + "xsj.jpeg",
+          videoUrl: ''
+        },
+        {
+          image: IMG_URL + "bjm.jpeg",
+          videoUrl: ''
+        },
+        {
+          image: IMG_URL + "kbj.jpeg",
+          videoUrl: ''
+        },
+      ],
     };
   },
 };

@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-12 16:29:22
  * @LastEditors: siwenfeng
- * @LastEditTime: 2021-11-26 13:40:04
+ * @LastEditTime: 2022-04-18 11:02:55
 -->
 <template>
   <view class="">
@@ -11,7 +11,7 @@
     <u-no-network @retry="init"></u-no-network>
     <template v-if="isConnected && isRefresh">
       <uni-top-navbar>
-      <view class="f-nav-title u-p-l-32">惠融资产</view>
+      <view class="f-nav-title u-p-l-32">温风点火</view>
     </uni-top-navbar>
     <f-home-swiper />
     <view class="u-p-x-32 u-p-t-24">
@@ -37,8 +37,11 @@ export default {
     return {
       isRefresh: true,
       isConnected: true, // 是否有网
-      noticeList: ["欢迎来到惠融资产！"],
+      noticeList: ["欢迎来到温风点火影院！"],
     };
+  },
+  onLoad(e) {
+    console.log(e);
   },
   onShow() {
     uni.onNetworkStatusChange((res) => {
