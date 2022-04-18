@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-12 16:29:22
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-18 11:02:55
+ * @LastEditTime: 2022-04-18 12:21:36
 -->
 <template>
   <view class="">
@@ -41,7 +41,10 @@ export default {
     };
   },
   onLoad(e) {
-    console.log(e);
+    const { videoUrl } = e;
+    if (videoUrl) {
+      this.$tools.routerTo(videoUrl);
+    } 
   },
   onShow() {
     uni.onNetworkStatusChange((res) => {
