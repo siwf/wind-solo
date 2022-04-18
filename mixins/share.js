@@ -3,14 +3,14 @@
  * @Autor: siwenfeng
  * @Date: 2021-11-09 13:43:49
  * @LastEditors: siwenfeng
- * @LastEditTime: 2021-11-23 15:04:10
+ * @LastEditTime: 2022-04-18 14:00:53
  */
 
 export  default  {
     data () {
         return {
             shareData: {
-                title: '惠融资产',
+                title: '温风点火',
                 path: '/pages/index/index',
                 imageUrl: '',
                 content: '',

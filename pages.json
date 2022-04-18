@@ -54,7 +54,7 @@
 		"pages/index/index": {
 			"network": "all",
 			"packages": [
-				"pages/home"
+				// "pages/home"
 			]
 		},
 		"pages/user/user": {
@@ -67,21 +67,6 @@
 		}
 	},
 	"subPackages": [
-		{
-			"root": "pages/home",
-			"pages": [
-				{
-					"path": "companyIntro",
-					"style": {
-						"navigationBarTitleText": "公司简介",
-						"navigationBarBackgroundColor": "#FFFFFF"
-					},
-					"meta": {
-						"auth": false
-					}
-				}
-			]
-		},
 		{
 			"root": "pages/public",
 			"pages": [

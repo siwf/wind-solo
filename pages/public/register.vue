@@ -3,11 +3,11 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-15 13:35:06
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-18 13:57:17
+ * @LastEditTime: 2022-04-18 14:00:29
 -->
 <template>
   <view class="f-public-register f-container-white">
-    <view class="f-register-title">注册惠融资产</view>
+    <view class="f-register-title">注册温风点火</view>
     <view class="f-register-wrap u-m-b-80">
       <u-form
         :rules="rules"
@@ -115,7 +115,7 @@ export default {
       const content = `
           <h2 style="text-align: center;"><strong>隐私政策</strong></h2>
         <p>【温风点火】小程序非常重视保护您的隐私。</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;为方便您登录、使用相关服务，以及为您提供更个性化的用户体验和服务，您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本隐私政策向您说明，在使用【深圳惠融资产管理有限公司】&nbsp;&nbsp;&nbsp;小程序（以下简称&ldquo;小程序&rdquo;）时，&nbsp;&nbsp;我们如何收集、使用、&nbsp;&nbsp;储存和披露您的信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。<strong><strong>本隐私政策与您所使用的小程序信息及个人隐私信息相关，希望您仔细阅读。</strong></strong><strong><strong><br /></strong></strong>&nbsp;&nbsp;<strong><strong>&nbsp;&nbsp;您阅读并同意本隐私政策后，即意味着您已经同意我们按照本隐私政策收集、使用、储存和披露您的相关信息，以及向您提供的控制和保护措施。</strong></strong><br /><strong><strong>&nbsp;</strong></strong><strong><strong>&nbsp;&nbsp;&nbsp;一、使用范围</strong></strong><br />&nbsp;&nbsp;&nbsp;&nbsp;1.1本隐私政策适用于小程序的所有服务，服务包括向您提供页面浏览、网站登录服务，以及通过小程序向您提供的技术服务等。<br />&nbsp;&nbsp;&nbsp;&nbsp;1.2本隐私政策中的&ldquo;信息&rdquo;特指第二条所收集的信息。<br /><strong><strong>&nbsp;</strong></strong><strong><strong>&nbsp;&nbsp;&nbsp;二、信息收集范围</strong></strong><br />&nbsp;&nbsp;&nbsp;&nbsp;2.1为完成小程序账户的注册、管理、实名认证等必要活动，<strong><strong>您需要提交真实、合法、有效的信息，包括但不限于您的姓名、身份证号码、身份证有效期、联系电话、人脸生物信息、微信昵称、头像等。</strong></strong><br />&nbsp;&nbsp;&nbsp;&nbsp;2.2您使用本服务时，可能收集已经经过您授权获取或主动填写的如下信息：<br />&nbsp;&nbsp;&nbsp;&nbsp;2.2.1日志信息，指您使用我们的服务时，系统可能通过自动采集的技术信息，包括：（1）设备或软件信息，例如您的移动设备、网页浏览器或用于接入我们服务的其他程序所提供的配置信息、您的IP&nbsp;地址和移动设备所用的版本和设备识别码。（2）有关您曾使用的移动应用和其他软件的信息，以及您曾经使用该等移动应用和软件的信息。（3）您通过我们的服务进行通讯的信息，例如曾通讯的账号。<br />&nbsp;&nbsp;&nbsp;&nbsp;2.2.2位置信息，指您开启设备定位功能并使用我们基于位置提供的相关服务。<br />&nbsp;&nbsp;&nbsp;&nbsp;2.2.3<strong><strong>您使用部分功能或服务时还应当提供使用该功能或服务所必须的信息，如在风险测评过程中，可能会根据您的答案提取到您受教育程度、收入情况、理财经验等相关信息，在音频视频录制过程中，我们将会保存您的录音录像信息。</strong></strong><strong><strong><br /></strong></strong><strong><strong>&nbsp;</strong></strong><strong><strong>&nbsp;&nbsp;&nbsp;三、如何收集信息</strong></strong><br />&nbsp;&nbsp;&nbsp;&nbsp;3.1我们通过您主动提交，以及在您使用我们的服务过程中产生相应的记录等方式收集您的信息。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;为方便您登录、使用相关服务，以及为您提供更个性化的用户体验和服务，您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本隐私政策向您说明，在使用【温风点火】&nbsp;&nbsp;&nbsp;小程序（以下简称&ldquo;小程序&rdquo;）时，&nbsp;&nbsp;我们如何收集、使用、&nbsp;&nbsp;储存和披露您的信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。<strong><strong>本隐私政策与您所使用的小程序信息及个人隐私信息相关，希望您仔细阅读。</strong></strong><strong><strong><br /></strong></strong>&nbsp;&nbsp;<strong><strong>&nbsp;&nbsp;您阅读并同意本隐私政策后，即意味着您已经同意我们按照本隐私政策收集、使用、储存和披露您的相关信息，以及向您提供的控制和保护措施。</strong></strong><br /><strong><strong>&nbsp;</strong></strong><strong><strong>&nbsp;&nbsp;&nbsp;一、使用范围</strong></strong><br />&nbsp;&nbsp;&nbsp;&nbsp;1.1本隐私政策适用于小程序的所有服务，服务包括向您提供页面浏览、网站登录服务，以及通过小程序向您提供的技术服务等。<br />&nbsp;&nbsp;&nbsp;&nbsp;1.2本隐私政策中的&ldquo;信息&rdquo;特指第二条所收集的信息。<br /><strong><strong>&nbsp;</strong></strong><strong><strong>&nbsp;&nbsp;&nbsp;二、信息收集范围</strong></strong><br />&nbsp;&nbsp;&nbsp;&nbsp;2.1为完成小程序账户的注册、管理、实名认证等必要活动，<strong><strong>您需要提交真实、合法、有效的信息，包括但不限于您的姓名、身份证号码、身份证有效期、联系电话、人脸生物信息、微信昵称、头像等。</strong></strong><br />&nbsp;&nbsp;&nbsp;&nbsp;2.2您使用本服务时，可能收集已经经过您授权获取或主动填写的如下信息：<br />&nbsp;&nbsp;&nbsp;&nbsp;2.2.1日志信息，指您使用我们的服务时，系统可能通过自动采集的技术信息，包括：（1）设备或软件信息，例如您的移动设备、网页浏览器或用于接入我们服务的其他程序所提供的配置信息、您的IP&nbsp;地址和移动设备所用的版本和设备识别码。（2）有关您曾使用的移动应用和其他软件的信息，以及您曾经使用该等移动应用和软件的信息。（3）您通过我们的服务进行通讯的信息，例如曾通讯的账号。<br />&nbsp;&nbsp;&nbsp;&nbsp;2.2.2位置信息，指您开启设备定位功能并使用我们基于位置提供的相关服务。<br />&nbsp;&nbsp;&nbsp;&nbsp;2.2.3<strong><strong>您使用部分功能或服务时还应当提供使用该功能或服务所必须的信息，如在风险测评过程中，可能会根据您的答案提取到您受教育程度、收入情况、理财经验等相关信息，在音频视频录制过程中，我们将会保存您的录音录像信息。</strong></strong><strong><strong><br /></strong></strong><strong><strong>&nbsp;</strong></strong><strong><strong>&nbsp;&nbsp;&nbsp;三、如何收集信息</strong></strong><br />&nbsp;&nbsp;&nbsp;&nbsp;3.1我们通过您主动提交，以及在您使用我们的服务过程中产生相应的记录等方式收集您的信息。</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;3.2 我们可能会通过数据埋点和其他相关技术收集和使用您的信息。我们使用数据埋点的具体用途包括：分析您使用我们服务的情况，以便为您提供周到的个性化服务，包括定制化页面、推荐等服务。</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;3.3 通过小程序数据埋点记录的有关信息，将适用本隐私政策。</p>
         <p><strong><strong>&nbsp;&nbsp;&nbsp;&nbsp;四、信息使用</strong></strong></p>
