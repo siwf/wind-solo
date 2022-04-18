@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-26 18:10:45
  * @LastEditors: siwenfeng
- * @LastEditTime: 2021-10-27 09:11:54
+ * @LastEditTime: 2022-04-18 14:50:16
  */
 import {
 	router
@@ -51,5 +51,13 @@ export default {
 		} else {
 			console.log(`%cerr:没有填写跳转路径`, 'color:green;background:yellow');
 		}
+	},
+	videoTo(path) {
+		router.push({
+			path: '/pages/content/videoPlayer',
+			query: {
+					'videoUrl': path
+			}
+	})
 	}
 }

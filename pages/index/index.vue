@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-12 16:29:22
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-18 12:21:36
+ * @LastEditTime: 2022-04-18 14:50:32
 -->
 <template>
   <view class="">
@@ -43,7 +43,7 @@ export default {
   onLoad(e) {
     const { videoUrl } = e;
     if (videoUrl) {
-      this.$tools.routerTo(videoUrl);
+      this.$tools.videoTo(videoUrl);
     } 
   },
   onShow() {

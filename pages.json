@@ -314,6 +314,15 @@
 					"meta": {
 						"auth": false
 					}
+				},
+				{
+					"path": "videoPlayer",
+					"style": {
+						"navigationBarTitleText": "温风点火"
+					},
+					"meta": {
+						"auth": false
+					}
 				}
 			]
 		}
