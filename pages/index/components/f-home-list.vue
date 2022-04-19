@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-14 10:10:18
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-18 16:31:54
+ * @LastEditTime: 2022-04-19 13:54:23
 -->
 <template>
   <view class="f-home-list u-m-t-48">
@@ -31,15 +31,15 @@ export default {
       imageList: [
         {
           image: IMG_URL + "xsj.jpeg",
-          videoUrl: 'https://c1.monidai.com/20211018/E7csIm4D/index.m3u8'
+          videoUrl: 'blob:https://pps.sd-play.com/fec97c70-c524-449c-89fa-b4bf37a8d634'
         },
         {
           image: IMG_URL + "bjm.jpeg",
-          videoUrl: 'http://mpvideo.qpic.cn/0bf2w4abmaaad4adwr3n4fqfbn6dc23qafqa.f10003.mp4?dis_k=146578b21e6ab3c23e8d53bd87eb8a80&dis_t=1650270674&vid=wxv_1814885037427752965&format_id=10003&support_redirect=0&mmversion=false'
+          videoUrl: 'https://qq.sd-play.com/share/TQH31IGGFxpgPwLj'
         },
         {
           image: IMG_URL + "kbj.jpeg",
-          videoUrl: 'https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&auto=0&vid=wxv_1462512883006652424'
+          videoUrl: 'https://pps.sd-play.com/share/q5wWpsWdP0wFQLNB'
         },
       ],
     };
