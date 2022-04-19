@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-18 13:42:08
  * @LastEditors: siwenfeng
- * @LastEditTime: 2021-11-30 13:34:14
+ * @LastEditTime: 2022-04-19 10:08:03
 -->
 <template>
   <view class="f-public-smscode u-p-t-76 u-p-x-64 f-container-white">
@@ -110,6 +110,7 @@ export default {
       });
     },
     next() {
+      this.$u.toast('功能后续开放,敬请期待！');
       this.$refs.uForm.validate((valid) => {
         if (valid) {
           const mobile = this.form.mobile.replace(/\s*/g, "");

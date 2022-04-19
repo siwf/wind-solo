@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-15 13:35:06
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-18 14:00:29
+ * @LastEditTime: 2022-04-19 10:07:24
 -->
 <template>
   <view class="f-public-register f-container-white">
@@ -194,6 +194,8 @@ export default {
         this.$u.toast('请先阅读并勾选平台相关服务协议')
         return
       }
+      this.$u.toast('功能后续开放,敬请期待！');
+      return
       this.$refs.uForm.validate((valid) => {
         if (valid) {
           const mobile = this.form.mobile.replace(/\s*/g,"")

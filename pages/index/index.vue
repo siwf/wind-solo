@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-12 16:29:22
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-18 14:50:32
+ * @LastEditTime: 2022-04-19 10:22:44
 -->
 <template>
   <view class="">
@@ -39,12 +39,6 @@ export default {
       isConnected: true, // 是否有网
       noticeList: ["欢迎来到温风点火影院！"],
     };
-  },
-  onLoad(e) {
-    const { videoUrl } = e;
-    if (videoUrl) {
-      this.$tools.videoTo(videoUrl);
-    } 
   },
   onShow() {
     uni.onNetworkStatusChange((res) => {

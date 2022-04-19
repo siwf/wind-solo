@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-18 09:48:24
  * @LastEditors: siwenfeng
- * @LastEditTime: 2021-11-30 16:08:07
+ * @LastEditTime: 2022-04-19 10:05:47
 -->
 <template>
   <view class="f-public-smscode u-p-t-76 u-p-x-64 f-container-white">
@@ -140,6 +140,8 @@ export default {
       })
     },
     next() {
+      this.$u.toast('功能后续开放,敬请期待！');
+      return
       // 注册绑定理财师
       if (this.btnCode == '1') {
         this.register()

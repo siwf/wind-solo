@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-14 16:53:25
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-18 10:32:17
+ * @LastEditTime: 2022-04-19 09:17:59
 -->
 <template>
   <view class="f-my-cell">
@@ -73,22 +73,22 @@ export default {
         {
           icon: 'icon-fortuneshimingxinxi',
           title: '我的电影票',
-          path: 'investorinfo',
+          path: 'setting',
         },
         {
           icon: 'icon-fortuneyinhangka',
           title: '我的兑换券',
-          path: 'myCard',
+          path: 'setting',
         },
         {
           icon: 'icon-fortunetouzizherenzheng',
           title: '我的收藏',
-          path: 'certificationDetail',
+          path: 'setting',
         },
         {
           icon: 'icon-fortunefengxianceping',
           title: '想看、看过的电影',
-          path: 'riskAssessment',
+          path: 'setting',
         },
         {
           icon: 'icon-fortunesetting-011',
