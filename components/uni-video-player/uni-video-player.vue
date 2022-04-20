@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2022-04-18 15:15:53
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-18 15:15:53
+ * @LastEditTime: 2022-04-20 15:25:55
 -->
 <template>
 
@@ -130,7 +130,7 @@
 				item: {},
 				videoContext: {},
 				// 视频加载字
-				VodLoadText: '正在解析影片请稍等',
+				VodLoadText: '温风点火解析中...',
 				// 是否显示视频控件
 				isShowControl: false,
 				// 视频是否填充

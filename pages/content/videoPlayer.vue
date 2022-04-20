@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2022-04-18 14:41:24
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-18 16:24:35
+ * @LastEditTime: 2022-04-20 15:09:17
 -->
 <template>
   <view v-show="videoUrl" style="width: 100%;">
@@ -21,6 +21,7 @@ export default {
     }
   },
   onLoad(options) {
+    this.videoUrl = ''
     const { videoUrl } = options
     this.videoUrl = videoUrl
   }

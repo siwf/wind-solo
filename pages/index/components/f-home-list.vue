@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-14 10:10:18
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-19 13:54:23
+ * @LastEditTime: 2022-04-20 15:46:31
 -->
 <template>
   <view class="f-home-list u-m-t-48">
@@ -30,16 +30,16 @@ export default {
     return {
       imageList: [
         {
-          image: IMG_URL + "xsj.jpeg",
-          videoUrl: 'blob:https://pps.sd-play.com/fec97c70-c524-449c-89fa-b4bf37a8d634'
+          image: IMG_URL + "ws2.jpeg",
+          videoUrl: 'https://vod2.bdzybf7.com/20220331/BofoJpBY/index.m3u8'
         },
         {
-          image: IMG_URL + "bjm.jpeg",
-          videoUrl: 'https://qq.sd-play.com/share/TQH31IGGFxpgPwLj'
+          image: IMG_URL + "bxh.jpeg",
+          videoUrl: 'https://hnzy3.hnzyww.com:65/20220414/muDd4z2l/index.m3u8'
         },
         {
-          image: IMG_URL + "kbj.jpeg",
-          videoUrl: 'https://pps.sd-play.com/share/q5wWpsWdP0wFQLNB'
+          image: IMG_URL + "hsy.jpeg",
+          videoUrl: 'https://pps.sd-play.com/20220109/IOM9deDm/index.m3u8'
         },
       ],
     };
