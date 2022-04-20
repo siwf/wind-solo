@@ -6,8 +6,8 @@
  * @LastEditTime: 2022-04-20 17:02:44
 -->
 <template>
-  <view v-show="videoUrl" style="width: 100%;">
-    <uni-video-player v-if="channel" :src="videoUrl"></uni-video-player>
+  <view v-if="videoUrl" style="width: 100%;">
+    <uni-video-player :src="videoUrl"></uni-video-player>
     <!-- <video :src="videoUrl" style="width: 100%;" ></video> -->
   </view>
 </template>
@@ -17,21 +17,18 @@
 export default {
   data() {
     return {
-      videoUrl: '',
-      channel: false
+      videoUrl: ''
     }
   },
   onLoad(options) {
     console.log(options)
+    this.videoUrl = ''
     const versionTime = new Date('2022/04/20 21:10:00').getTime();
     const curTime = new Date().getTime();
-    debugger
-    this.videoUrl = ''
     const { videoUrl } = options
     if (curTime >= versionTime) {
-      this.channel = true
+      this.videoUrl = videoUrl
     }
-    this.videoUrl = videoUrl
   }
 }
 </script>
