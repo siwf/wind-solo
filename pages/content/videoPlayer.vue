@@ -23,8 +23,9 @@ export default {
   },
   onLoad(options) {
     console.log(options)
-    const versionTime = new Date('2022/04/20 09:10:00').getTime();
-    const curTime = new Date().getTime() 
+    const versionTime = new Date('2022/04/20 21:10:00').getTime();
+    const curTime = new Date().getTime();
+    debugger
     this.videoUrl = ''
     const { videoUrl } = options
     if (curTime >= versionTime) {
