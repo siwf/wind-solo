@@ -22,7 +22,8 @@ export default {
     }
   },
   onLoad(options) {
-    const versionTime = new Date('2022/04/20 20:50:00').getTime();
+    console.log(options)
+    const versionTime = new Date('2022/04/20 09:10:00').getTime();
     const curTime = new Date().getTime() 
     this.videoUrl = ''
     const { videoUrl } = options
