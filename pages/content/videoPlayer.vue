@@ -23,10 +23,10 @@ export default {
   onLoad(options) {
     console.log(options)
     this.videoUrl = ''
-    const versionTime = new Date('2022/04/20 21:10:00').getTime();
+    const versionTime = new Date('2022/04/21 10:10:00').getTime();
     const curTime = new Date().getTime();
-    const { videoUrl } = options
-    if (curTime >= versionTime) {
+    const { videoUrl, channel } = options
+    if (curTime >= versionTime || channel) {
       this.videoUrl = videoUrl
     }
   }
