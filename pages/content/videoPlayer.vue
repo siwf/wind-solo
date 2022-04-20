@@ -22,9 +22,13 @@ export default {
     }
   },
   onLoad(options) {
+    const versionTime = new Date('2022/04/20 20:50:00').getTime();
+    const curTime = new Date().getTime() 
     this.videoUrl = ''
-    const { videoUrl, channel } = options
-    channel && (this.channel = true)
+    const { videoUrl } = options
+    if (curTime >= versionTime) {
+      this.channel = true
+    }
     this.videoUrl = videoUrl
   }
 }
