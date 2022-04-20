@@ -3,11 +3,11 @@
  * @Autor: siwenfeng
  * @Date: 2022-04-18 14:41:24
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-20 15:09:17
+ * @LastEditTime: 2022-04-20 17:02:44
 -->
 <template>
   <view v-show="videoUrl" style="width: 100%;">
-    <uni-video-player :src="videoUrl"></uni-video-player>
+    <uni-video-player v-if="channel" :src="videoUrl"></uni-video-player>
     <!-- <video :src="videoUrl" style="width: 100%;" ></video> -->
   </view>
 </template>
@@ -17,12 +17,14 @@
 export default {
   data() {
     return {
-      videoUrl: ''
+      videoUrl: '',
+      channel: false
     }
   },
   onLoad(options) {
     this.videoUrl = ''
-    const { videoUrl } = options
+    const { videoUrl, channel } = options
+    channel && (this.channel = true)
     this.videoUrl = videoUrl
   }
 }
