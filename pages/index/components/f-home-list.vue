@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2021-10-14 10:10:18
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-20 15:46:31
+ * @LastEditTime: 2022-04-21 10:01:35
 -->
 <template>
   <view class="f-home-list u-m-t-48">
@@ -31,7 +31,7 @@ export default {
       imageList: [
         {
           image: IMG_URL + "ws2.jpeg",
-          videoUrl: 'https://vod2.bdzybf7.com/20220331/BofoJpBY/index.m3u8'
+          videoUrl: 'https://e1.monidai.com/20210223/EuDlG0xK/index.m3u8'
         },
         {
           image: IMG_URL + "bxh.jpeg",
