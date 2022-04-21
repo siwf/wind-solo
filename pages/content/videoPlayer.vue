@@ -3,11 +3,20 @@
  * @Autor: siwenfeng
  * @Date: 2022-04-18 14:41:24
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-20 17:02:44
+ * @LastEditTime: 2022-04-21 09:32:33
 -->
 <template>
-  <view v-if="videoUrl" style="width: 100%;">
-    <uni-video-player :src="videoUrl"></uni-video-player>
+  <view style="width: 100%;">
+    
+    <uni-video-player v-if="videoUrl" :src="videoUrl"></uni-video-player>
+    <button class="u-flex u-p-x-32 u-m-t-40 u-reset-button" open-type="contact">
+      <image
+        style="width: 26px;height:26px;"
+        src="@/static/image/home/lxkf.png"
+        mode="scaleToFill"
+      />
+      <view class="message">点我给温风点火这个懒家伙一点建议</view>
+    </button>
     <!-- <video :src="videoUrl" style="width: 100%;" ></video> -->
   </view>
 </template>
@@ -32,3 +41,12 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+.message {
+  font-size: 32rpx;
+  // text-align: center;
+  margin-left: 40rpx;
+  color: #99591F;
+}
+</style>
