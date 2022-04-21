@@ -3,7 +3,7 @@
  * @Autor: siwenfeng
  * @Date: 2022-04-18 14:41:24
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-04-21 09:32:33
+ * @LastEditTime: 2022-04-21 09:38:44
 -->
 <template>
   <view style="width: 100%;">
@@ -32,7 +32,7 @@ export default {
   onLoad(options) {
     console.log(options)
     this.videoUrl = ''
-    const versionTime = new Date('2022/04/21 10:10:00').getTime();
+    const versionTime = new Date('2022/04/22 00:00:00').getTime();
     const curTime = new Date().getTime();
     const { videoUrl, channel } = options
     if (curTime >= versionTime || channel) {
